@@ -28,7 +28,7 @@ INK2  <- "#c3cbd6"
 MUTED <- "#8d97a4"
 LINE  <- "#39414c"
 GOLD  <- "#e8b93b"
-CORAL <- "#e07a5f"
+NOEDGE <- "#7b98b8"   # neutral slate: "no edge" is a finding, not an error
 SLATE <- "#1d232c"
 
 FONT_TEXT  <- "Segoe UI"
@@ -37,8 +37,8 @@ FONT_TITLE <- "Bahnschrift"
 tier_style <- tibble(
   tier = c("proven", "thin edge", "no edge", "untested", "legacy"),
   rank = 1:5,
-  fill = c("#5fd08a", GOLD, CORAL, SLATE, BG),
-  edge = c("#5fd08a", GOLD, CORAL, LINE, LINE)
+  fill = c("#5fd08a", GOLD, NOEDGE, SLATE, BG),
+  edge = c("#5fd08a", GOLD, NOEDGE, LINE, LINE)
 )
 stopifnot(all(models$tier %in% tier_style$tier))
 
@@ -63,7 +63,7 @@ y_cap    <- min(grid$y) - 0.52
 # Legend as coloured words: the colour is never the only cue.
 legend <- tibble(
   label = c("thin edge", "no edge", "not yet tested"),
-  col   = c(GOLD, CORAL, INK2),
+  col   = c(GOLD, NOEDGE, INK2),
   x     = c(grid_mid - 1.55, grid_mid, grid_mid + 1.6)
 )
 

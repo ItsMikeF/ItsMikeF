@@ -3,8 +3,8 @@
 ### Supply chain planner who builds forecasting models
 
 I work in supply chain: SAP MRP planning, inventory parameters, carriers and raw-material
-procurement. On my own time I build forecasting systems in R. Wherever a market exists, I grade
-them against its prices, the toughest benchmark there is, and I publish the ones that lose.
+procurement. On my own time I build forecasting systems in R, and wherever a market exists I grade
+them against its prices, the hardest benchmark there is.
 
 <table>
   <tr>
@@ -18,9 +18,9 @@ them against its prices, the toughest benchmark there is, and I publish the ones
 ## Featured: the forecast honesty lab
 
 [**forecast-honesty-lab**](https://github.com/ItsMikeF/forecast-honesty-lab) is the scorecard for
-every forecasting model I've documented. **15 of the 18 tested against real market prices lost**,
-and the losers taught me the most. The repo has eight lessons on testing a forecast honestly, each
-with the number that taught it.
+every forecasting model I've documented, graded against real market prices. **3 of the 18 tested
+came out slightly ahead, and the 15 that couldn't beat the market taught me the most.** The repo has
+eight lessons on testing a forecast honestly, each with the number that taught it.
 
 <a href="https://github.com/ItsMikeF/forecast-honesty-lab"><img src="assets/scorecard.png" alt="Scorecard of 34 forecasting models: 0 proven, 3 thin edge, 15 no edge, 15 never market-tested, 1 retired" width="100%"></a>
 
@@ -32,8 +32,8 @@ with the number that taught it.
   on is measuring memory ([lesson 1](https://github.com/ItsMikeF/forecast-honesty-lab#1-the-model-has-to-be-as-of-not-just-the-data)).
 - **Every new feature races a column of random noise.** If noise improves the metric too, the
   gain isn't real ([lesson 3](https://github.com/ItsMikeF/forecast-honesty-lab#3-every-new-feature-has-to-beat-random-noise)).
-- **The losers get published too.** A tier moves on a market test only, never on an accuracy
-  gain.
+- **Every result gets published, misses included.** A model moves up only on a market test, never
+  on an accuracy gain.
 
 ## Also in the private repo
 
